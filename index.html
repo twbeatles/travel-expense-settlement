@@ -3,21 +3,48 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#667eea" />
   <meta name="description" content="해외여행 경비를 다중 통화로 정확하게 정산하는 총무의 계산기" />
+
+  <!-- PWA -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="총무계산기" />
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="./manifest.json" />
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Travel Team" />
+  <meta name="keywords" content="여행, 정산, 경비, 다중통화, 환율, 해외여행, travel, expense, settlement" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="총무의 계산기 - 다중 통화 해외여행 정산" />
+  <meta property="og:description" content="해외여행 경비를 다중 통화로 정확하게 정산하세요" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="총무의 계산기" />
+  <meta name="twitter:description" content="해외여행 경비를 다중 통화로 정확하게 정산" />
+
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
   <title>총무의 계산기 - 다중 통화 해외여행 정산</title>
-  <script type="module" crossorigin src="/assets/index-Clv_BPGZ.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/react-qkC6yhPU.js">
-  <link rel="modulepreload" crossorigin href="/assets/state-CaaGWC4P.js">
-  <link rel="modulepreload" crossorigin href="/assets/query-DSssunvb.js">
-  <link rel="modulepreload" crossorigin href="/assets/firebase-BLlXytI7.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-ChCz2jx7.css">
+  <script type="module" crossorigin src="./assets/index-Bq_nUexP.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/react-qkC6yhPU.js">
+  <link rel="modulepreload" crossorigin href="./assets/state-CaaGWC4P.js">
+  <link rel="modulepreload" crossorigin href="./assets/query-DSssunvb.js">
+  <link rel="modulepreload" crossorigin href="./assets/firebase-BLlXytI7.js">
+  <link rel="modulepreload" crossorigin href="./assets/export-tkypTl9r.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-N-NnyrSF.js">
+  <link rel="modulepreload" crossorigin href="./assets/ui-BZrhb3E4.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-CSIDUk6I.css">
 </head>
 
 <body>
@@ -25,7 +52,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('./sw.js')
           .then(reg => console.log('SW registered'))
           .catch(err => console.log('SW registration failed'));
       });
