@@ -6,6 +6,7 @@
 ![React](https://img.shields.io/badge/React-19.2-61dafb.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6.svg)
 ![Vite](https://img.shields.io/badge/Vite-7.2-646cff.svg)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC.svg)
 
 ---
 
@@ -267,6 +268,7 @@ npx playwright test
 | **상태 관리** | Custom Hooks + Zustand |
 | **백엔드** | Firebase (Auth, Firestore, Storage) |
 | **오프라인** | IndexedDB + Service Worker |
+| **스타일링** | Tailwind CSS, CSS Modules |
 | **차트** | Chart.js, react-chartjs-2 |
 | **PDF** | jsPDF, html2canvas |
 | **OCR** | Tesseract.js |
@@ -282,6 +284,7 @@ npx playwright test
 src/
 ├── components/         # 134+ React 컴포넌트
 │   ├── common/         # 공통 (Toast, ErrorBoundary, Modal)
+│   ├── ui/             # 공통 UI 컴포넌트 (Button, Input, Modal 등)
 │   ├── ExpenseTab.tsx       # 지출 관리 탭
 │   ├── SettlementTab.tsx    # 정산 탭
 │   ├── DashboardTab.tsx     # 통계 대시보드
